@@ -164,7 +164,7 @@ GEM
     turbolinks-source (5.0.3)
     tzinfo (1.2.4)
       thread_safe (~> 0.1)
-    uglifier (4.0.2)
+    uglifier (4.1.0)
       execjs (>= 0.3.0, < 3)
     web-console (3.5.1)
       actionview (>= 5.0)
@@ -182,14 +182,14 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
-  bootstrap-sass (~> 3.3.7)
+  bootstrap-sass
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.7)
-  rails (~> 5.1.4)
+  rails
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
