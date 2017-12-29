@@ -1,8 +1,31 @@
-<div class="center jumbotron">
-  <%= link_to image_tag("bs_logo.jpg", alt: "BS Logo"),root_path %>
+<% if logged_in? %>
 
-  <h1>SPLAINER</h1>
-  <h2>Because sometimes you need to call out some BS.</h2>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render 'shared/user_info' %>
+      </section>
+      <section class="splain_form">
+        <%= render 'shared/splain_form' %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3>Latest Splains </h3>
+      <ol class="splains">
+        <%= render @splains %>
+      </ol>
+    </div>
+  </div>
 
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-</div>
+<% else %>
+
+  <div class="center jumbotron">
+    <%= link_to image_tag("bs_logo.jpg", alt: "BS Logo"),root_path %>
+
+    <h1>SPLAINER</h1>
+    <h2>Because sometimes you need to call out some BS.</h2>
+
+    <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+
+<% end %>

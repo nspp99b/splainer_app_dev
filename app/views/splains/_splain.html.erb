@@ -1,0 +1,7 @@
+<li id="splain-<%= splain.id %>">
+  <span class="user"><%= link_to splain.user.name, splain.user %></span>
+  <span class="content"><%= splain.content %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(splain.created_at) %> ago.
+  </span>
+</li>

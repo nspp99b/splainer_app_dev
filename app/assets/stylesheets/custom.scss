@@ -104,9 +104,9 @@ footer {
 }
 
 
-/* claims */
+/* Splains */
 
-.claims {
+.splains {
   list-style: none;
   padding: 0;
   li {
@@ -119,7 +119,7 @@ footer {
   }
   .content {
     display: block;
-    margin-left: 60px;
+    // margin-left: 60px;
     img {
       display: block;
       padding: 5px 0;
@@ -128,7 +128,7 @@ footer {
   .timestamp {
     color: $gray-light;
     display: block;
-    margin-left: 60px;
+    // margin-left: 60px;
   }
 }
 
