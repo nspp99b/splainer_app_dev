@@ -24,6 +24,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @splain = current_user.splains.build if logged_in?
     @splains = @user.splains
   end
 

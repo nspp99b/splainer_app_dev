@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  judgement: false
+  user_id: 1
+  splain_id: 1
+
+two:
+  judgement: false
+  user_id: 1
+  splain_id: 1

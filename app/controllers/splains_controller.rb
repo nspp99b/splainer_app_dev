@@ -11,7 +11,7 @@ class SplainsController < ApplicationController
       flash[:success] = "Splained!"
       redirect_to root_url
     else
-      render 'static_pages/home'
+      redirect_to request.referrer
     end
   end
 

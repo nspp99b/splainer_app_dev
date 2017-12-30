@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171229203349) do
+ActiveRecord::Schema.define(version: 20171230165105) do
+
+  create_table "calls", force: :cascade do |t|
+    t.boolean "judgement"
+    t.integer "user_id"
+    t.integer "splain_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id", "splain_id"], name: "index_calls_on_user_id_and_splain_id", unique: true
+  end
 
   create_table "splains", force: :cascade do |t|
     t.text "content"
