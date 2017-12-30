@@ -15,7 +15,27 @@ class SplainsController < ApplicationController
     end
   end
 
+  def edit
+    @splain = Splain.find(params[:id])
+  end
+
+  def update
+    @splain = Splain.find(params[:id])
+    @user = @splain.user
+    if @splain.update_attributes(splain_params)
+      flash[:success] = "Resplained Succesfully"
+      redirect_to @user
+    else
+      render 'edit'
+    end
+  end
+
   def destroy
+    @splain = Splain.find(params[:id])
+    @user = @splain.user
+    @splain.destroy
+    flash[:success] = "Splain Unesplained"
+    redirect_to @user
   end
 
   private
