@@ -8,7 +8,7 @@
   <span class="timestamp">
     Posted <%= time_ago_in_words(splain.created_at) %> ago.
   </span>
-  <% if current_user == @user %>
+  <% if current_user == splain.user %>
   <span class="edits"><%= link_to "edit", "/splains/#{splain.id}/edit" %> | <%= link_to "delete", splain, method: :delete,
                                 data: { confirm: "You sure?" } %></span>
   <% end %>

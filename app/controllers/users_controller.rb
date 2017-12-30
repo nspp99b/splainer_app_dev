@@ -4,6 +4,8 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
+    @user = current_user
+    @splain = current_user.splains.build if logged_in?
     @users = User.all
   end
 
