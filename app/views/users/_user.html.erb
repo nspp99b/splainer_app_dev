@@ -1,5 +1,9 @@
 <li>
-  <%= link_to user.name, user %>
+  <% if user.truthful? %>
+    <%= link_to user.name, user %>
+  <% else %>
+    <%= link_to user.name, user, :class => "full_of_bs" %>
+  <% end %>
   <% if current_user.admin? && !current_user?(user) %>
     | <%= link_to "delete", user, method: :delete,
                                   data: { confirm: "You sure?" } %>

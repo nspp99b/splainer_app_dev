@@ -1,3 +1,7 @@
-<h1><%= @user.name %></h1>
+<% if @user.truthful? %>
+  <h1><%= @user.name %></h1>
+<% else %>
+  <h1 class="full_of_bs"><%= @user.name %></h1>
+<% end %>
 <span><%= link_to "view my profile", @user %></span>
 <span><%= pluralize(@user.splains.count, "splain") %></span>

@@ -13,4 +13,15 @@ class User < ApplicationRecord
                     uniqueness: { case_sensitive: false }
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
+
+  def truthy_test
+    self.splains.collect do |splain|
+      splain.truthy?
+    end
+  end
+
+  def truthful?
+    self.truthy_test.count(true) >= truthy_test.length / 2
+  end
+
 end

@@ -1,6 +1,10 @@
 <li id="splain-<%= splain.id %>">
   <span class="user"><%= link_to splain.user.name, splain.user %></span>
-  <span class="content"><%= splain.content %></span>
+    <% if splain.truthy? %>
+      <span class="content-fact"><%= splain.content %></span>
+    <% else %>
+      <span class="content-whopper"><%= splain.content %></span>
+    <% end %>
   <div class="judgements">
     <%= button_to "Amen", {:controller => "calls", :action => "create", :judgement => true, :splain_id => splain}, form: {style: 'display:inline-block;'} %> <%= splain.amens.count %>
     <%= button_to "BS", {:controller => "calls", :action => "create", :judgement => false, :splain_id => splain}, form: {style: 'display:inline-block;'} %> <%= splain.patties.count %>
