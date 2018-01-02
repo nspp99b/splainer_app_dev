@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+SPLAINER is a cynical micro-blogging application in development by Shahin Motia, a student at Flatiron School.
 
-Things you may want to cover:
+Create a user account, Splain something to the community, then either "Amen" or call "BS" on user splains!  
+
+Individual splains with more BS calls than Amens will discolor red, and references to users who have more red splains than black will appear red also!
 
 * Ruby version
+2.3.3
 
 * System dependencies
-
-* Configuration
+Rails 5.1.4
+Bootstrap-sass 3.3.7
+Bcrypt 3.1.11
 
 * Database creation
-
-* Database initialization
+rake db:migrate will create development.sqlite3. There's no seed, so go nuts.
 
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ehhhh... forthcoming!  I would ignore the generated tests for now.
