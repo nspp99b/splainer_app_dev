@@ -1,4 +1,4 @@
-# README
+# SPLAINER
 
 SPLAINER is a cynical micro-blogging application in development by Shahin Motia, a student at Flatiron School.
 
