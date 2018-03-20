@@ -1,5 +1,7 @@
 # SPLAINER
 
+![Splainer_HomeScreen](app/assets/images/screenshots/home.png "Splainer HomeScreen")
+
 SPLAINER is a cynical micro-blogging application in development by Shahin Motia, a student at Flatiron School.
 
 Create a user account, Splain something to the community, then either "Amen" or call "BS" on user splains!  
