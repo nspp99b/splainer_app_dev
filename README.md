@@ -10,16 +10,16 @@ Individual splains with more BS calls than Amens will discolor red, and referenc
 
 ![Sample Splain](app/assets/images/screenshots/samplesplain.png "Sample Splain")
 
-* Ruby version
+* Ruby version  
 2.3.3
 
-* System dependencies
-Rails 5.1.4
-Bootstrap-sass 3.3.7
-Bcrypt 3.1.11
+* System dependencies  
+Rails 5.1.4  
+Bootstrap-sass 3.3.7  
+Bcrypt 3.1.11  
 
-* Database creation
+* Database creation  
 rake db:migrate will create development.sqlite3. There's no seed, so go nuts.
 
-* Maintenance/Contribution
+* Maintenance/Contribution  
 This repo was more or less a practice run and is not maintained, but that does not diminish the hilarity of this idea or the force of its social criticism.  Please feel free to flesh out any expected functionality!
